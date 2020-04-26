@@ -60,6 +60,13 @@ public class Cliente {
     		
     }
     
+    public void mostrarPeliculas(){
+        for (int i = 0; i < listaPeliculas.size(); i++) {
+            Pelicula pe = listaPeliculas.get(i);
+            System.out.println(pe.getTitulo());
+        }
+    }
+    
     @Override
     public String toString() {
         return  codigoCliente + ", " + nombreApellidos + ", " + listaPeliculas ;
